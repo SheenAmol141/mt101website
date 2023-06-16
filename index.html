@@ -2,54 +2,71 @@
 <html>
 <head>
   <title>Web Development Company</title>
-  <style>
-    /* Sticky menu styles */
-    .sticky {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background-color: #222;
-      z-index: 100;
-    }
-    .sticky a {
-      display: inline-block;
-      color: #fff;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-    }
-    body {
-      background-color: #111;
-      color: #fff;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    h1, h2 {
-      color: #fff;
-    }
-    p {
-      margin-bottom: 20px;
-    }
-    img {
-      max-width: 100%;
-      height: auto;
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
   <!-- Sticky menu -->
-  <div class="sticky">
-    <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
-    <a href="floor-plan.html">Floor Plan</a>
-    <a href="building-model.html">Building 3D Model</a>
-    <a href="contact.html">Contact Us</a>
+  <div class="stickyhdr">
+    <div>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="floor-plan.html">Floor Plan</a>
+      <a href="building-model.html">Building 3D Model</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
   </div>
 
   <!-- Homepage content -->
-  <h1>Welcome to our Web Development Company!</h1>
-  <p>We specialize in web development and web design services.</p>
-  <p>Take a look at our previous projects and contact us to get started!</p>
+  <div id="fst">
+
+    <video id="background-video" autoplay loop muted>
+    <source src="vid.mp4" type="video/mp4">
+
+    </video>
+    <div>
+      <h1>Get a Website Today!</h1>
+      <p>We specialize in web development and web design services.</p>
+      <p>Take a look at our previous projects and contact us to get started!</p>
+      <a class="btn" href="/contact-us">Contact Us!</a>
+    </div>
+  </div>
+  <div class="scnd sct">
+    <div class="innr">
+      <h2>Our Services</h2>
+      <div>
+        <div class="srv">
+          <h3>Web Development Services</h3>
+          <p>Our Web Development Company specializes in custom web development solutions. Our services include</p>
+          <ul>
+            <li>Custom website development</li>
+            <li>CMS integration</li>
+            <li>E-commerce solutions</li>
+            <li>Web application development</li>
+            <li>Performance optimization and maintenance</li>
+          </ul>
+        </div>
+        <div class="srv">
+          <h3>Web Development Services</h3>
+          <p>Our Web Development Company specializes in custom web development solutions. Our services include</p>
+          <ul>
+            <li>Responsive web design</li>
+            <li>UI/UX design</li>
+            <li>Graphic design and branding</li>
+            <li>Wireframing and prototyping</li>
+            <li>Website redesign and optimization</li>  
+          </ul>
+        </div>
+      </div>
+            <div class="btndv">
+            <a class="btn" href="/contact-us">Contact Us!</a>
+            </div>
+    </div>
+  </div>
+  <div class="trd sct">
+    <div class="innr">
+      <h2>Contact Us</h2>
+
+    </div>
+  </div>
 </body>
 </html>
