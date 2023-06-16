@@ -185,6 +185,17 @@ input[type="submit"] {
   width: 400px;
   margin: 20px;
 }
-.stickyhdr a:hover {
-  opacity: 80%
+.stickyhdr a:hover, .stickyhdr a.active {
+  color: #5c578d;
+}
+.hdr {
+    background: rgb(92, 86, 142);
+    margin-top: 100px;
+    height: 200px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+.hdr h1 {
+  color: #fff;
 }
