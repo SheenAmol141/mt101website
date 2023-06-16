@@ -1,4 +1,5 @@
-
+html input, html textarea, html a{
+  transition: ease-in-out .3s;
 }
 html {
   scroll-behavior: smooth;
@@ -184,7 +185,7 @@ input[type="submit"] {
   width: 400px;
   margin: 20px;
 }
-.stickyhdr a:hover, .stickyhdr a.active {
+.stickyhdr a:hover, stickyhdr a.active {
   color: #5c578d;
 }
 .hdr {
