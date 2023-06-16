@@ -1,14 +1,18 @@
+* {
+  transition: ease-in-out .3s;
+}
 html {
   scroll-behavior: smooth;
 }
 .stickyhdr {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background-color: white;
-      z-index: 100;
-      height: 100px;
-    }
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: white;
+    z-index: 100;
+    height: 100px;
+    box-shadow: rgb(136, 136, 136) -1px -12px 20px 0px;
+}
 .stickyhdr > div {
     display: flex;
     width: 1200px;
@@ -176,4 +180,11 @@ input[type="submit"] {
 }
 .fl:hover, textarea:hover {
   background: #bfc2c5;
+}
+.frm.lft img {
+  width: 400px;
+  margin: 20px;
+}
+.stickyhdr a:hover {
+  opacity: 80%
 }
