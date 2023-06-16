@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 .stickyhdr {
       position: fixed;
       top: 0;
@@ -6,12 +9,17 @@
       z-index: 100;
       height: 100px;
     }
-
 .stickyhdr > div {
+    display: flex;
     width: 1200px;
+    margin: auto;
+} 
+.stickyhdr .anc {
+    width: 800px;
     margin: 24px auto;
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
 }
     .stickyhdr a {
       display: inline-block;
@@ -22,6 +30,13 @@
       font-weight: bold;
 
     }
+    .logo {
+  width: 400px;
+}
+.logo img {
+    width: 101px;
+    margin: 11px;
+}
     body {
       background: url();
       color: #000;
@@ -52,9 +67,6 @@ div#fst {
   margin-top: 30px;
   position: relative;
 }
-    h1, h2 {
-      color: #fff;
-    }
     p {
       margin-bottom: 20px;
       font-size: 18px
@@ -63,7 +75,7 @@ div#fst {
       max-width: 100%;
       height: auto;
     }
-    .btn {
+    .btn, input[type="submit"] {
     color: white;
     background: rgb(75, 66, 131);
     padding: 15px 30px;
@@ -72,12 +84,15 @@ div#fst {
     margin-top: 37px !important;
     display: inline-block;
     font-weight: bold;
+    border: 0;
+    font-family: 'Century Gothic', sans-serif;
 }
-    .btn:hover {
+    .btn:hover, input[type="submit"]:hover {
 opacity: 80%;
 }
 h1 {
   font-size: 60px;
+  color: white
 }
 
 .scnd {
@@ -98,8 +113,10 @@ h1 {
   padding: 20px 50px;
   border-radius: 20px
 }
+
 .innr > div {
-  display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 .srv h3, .srv p {
   text-align: center;
@@ -113,4 +130,50 @@ font-size: 25px
 .btndv {
   text-align: center;
   display: block !important;
+}
+.trd {
+  background-color: #f1f5f9;
+
+}
+.trd h2., .trd p {
+    color: black;
+}
+.frm.lft {
+    display: flex;
+    grid-template-columns: 1fr;
+    margin: 20px;
+    flex-direction: column;
+}
+.innr.fr {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.frm.rt {
+    grid-template-columns: 1fr;
+    padding: 60px;
+    background: white;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+label {
+    width: 100%;
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+input[type="submit"] {
+    margin: 0px !important;
+}
+.fl, textarea {
+    width: 89%;
+    background: rgb(241, 245, 249);
+    border: 0px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-family: 'century gothic', sans-serif;
+    font-size: 16px;
+    transition: ease-in-out .3s;
+}
+.fl:hover, textarea:hover {
+  background: #bfc2c5;
 }
