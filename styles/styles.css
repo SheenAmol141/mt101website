@@ -37,6 +37,12 @@ html {
     .logo {
   width: 400px;
 }
+h2.cntr {
+    text-align: center;
+}
+div#services {
+    padding: 0;
+}
 .logo img {
     width: 101px;
     margin: 11px;
@@ -93,6 +99,9 @@ div#fst {
 }
     .btn:hover, input[type="submit"]:hover {
 opacity: 80%;
+}
+div#vid {
+    grid-template-columns: 1fr;
 }
 h1 {
   font-size: 60px;
